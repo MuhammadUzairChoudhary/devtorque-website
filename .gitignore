@@ -1,0 +1,11 @@
+.next/
+node_modules/
+.pnpm-store/
+out/
+dist/
+build/
+.env*
+!.env.example
+*.log
+.vercel/
+coverage/

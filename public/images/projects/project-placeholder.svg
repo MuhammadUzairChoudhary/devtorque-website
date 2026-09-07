@@ -1,0 +1,17 @@
+<svg width="1024" height="640" viewBox="0 0 1024 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DevTorque project placeholder</title>
+  <desc id="desc">A structured composition of interface blocks and alignment guides.</desc>
+  <rect width="1024" height="640" fill="#15120F"/>
+  <rect x="80" y="80" width="864" height="480" rx="8" fill="#F8F5EF"/>
+  <rect x="128" y="128" width="272" height="384" rx="6" fill="#FFFFFF" stroke="#D8CEC0"/>
+  <rect x="448" y="128" width="448" height="96" rx="6" fill="#EFE8DC"/>
+  <rect x="448" y="256" width="184" height="256" rx="6" fill="#FFFFFF" stroke="#D8CEC0"/>
+  <rect x="664" y="256" width="232" height="112" rx="6" fill="#FFFFFF" stroke="#D8CEC0"/>
+  <rect x="664" y="400" width="232" height="112" rx="6" fill="#FFFFFF" stroke="#D8CEC0"/>
+  <path d="M176 184H352" stroke="#EC6A2C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M176 232H320" stroke="#4F4942" stroke-width="8" stroke-linecap="round"/>
+  <path d="M176 272H336" stroke="#D8CEC0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M496 176H848" stroke="#15120F" stroke-width="10" stroke-linecap="round"/>
+  <path d="M704 312H856" stroke="#EC6A2C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M704 456H824" stroke="#4F4942" stroke-width="10" stroke-linecap="round"/>
+</svg>
