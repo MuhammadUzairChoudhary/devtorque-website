@@ -14,15 +14,15 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    slug: "leafyland",
-    title: "LeafyLand",
-    category: "Marketplace",
+    slug: "exaa-schools",
+    title: "Exaa Schools",
+    category: "Education",
     description:
-      "A green marketplace bringing plants, gardening products, expert services, and properties into one platform, making it easier to shop, hire, and explore.",
-    services: ["Product design", "Web development", "Marketplace"],
+      "A modern school website designed to present campuses, academic programs, activities, admissions information, and the school's educational approach in a clear and accessible experience for parents and students.",
+    services: ["Brand website", "UI/UX design", "Web development"],
     year: "2026",
-    thumbnail: "/images/projects/LeafyLand.png",
-    liveUrl: "https://leafyland.com/",
+    thumbnail: "/images/projects/Exaa Schools.png",
+    liveUrl: "https://exaxschool.vercel.app/",
     featured: true
   },
   {

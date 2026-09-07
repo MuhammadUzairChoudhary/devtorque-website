@@ -15,11 +15,11 @@ export function DesktopNavigation() {
 
         return (
           <Link
-            aria-current={isActive ? "true" : undefined}
-            className={`group relative inline-flex min-h-11 items-center gap-2 font-[var(--font-inter)] text-base leading-none transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] hover:text-text-primary ${
+            aria-current={isActive ? "location" : undefined}
+            className={`nav-section-link group relative inline-flex min-h-11 items-center gap-2 font-[var(--font-inter)] text-base leading-none transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] ${
               isActive
-                ? "font-semibold text-text-primary"
-                : "font-normal text-text-secondary-large"
+                ? "font-bold"
+                : "font-normal"
             }`}
             href={item.href}
             key={item.href}

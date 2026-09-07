@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { navItems } from "@/lib/constants";
 
 const sectionIds = navItems
@@ -9,8 +10,15 @@ const sectionIds = navItems
 
 export function useActiveSection(): string | null {
   const [activeId, setActiveId] = useState<string | null>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
+    // Only track sections on the home page
+    if (pathname !== "/") {
+      setActiveId(null);
+      return;
+    }
+
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter((element): element is HTMLElement => element !== null);
@@ -18,6 +26,8 @@ export function useActiveSection(): string | null {
     if (sections.length === 0 || !("IntersectionObserver" in window)) {
       return;
     }
+
+    setActiveId(null);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -50,7 +60,7 @@ export function useActiveSection(): string | null {
       observer.disconnect();
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [pathname]);
 
   return activeId;
 }

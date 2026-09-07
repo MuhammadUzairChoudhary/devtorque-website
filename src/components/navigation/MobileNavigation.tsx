@@ -80,11 +80,11 @@ export function MobileNavigation() {
 
                 return (
                   <Link
-                    aria-current={isActive ? "true" : undefined}
-                    className={`rounded-[var(--radius-sm)] py-4 font-[var(--font-inter)] text-3xl leading-none transition-colors hover:text-text-primary ${
+                    aria-current={isActive ? "location" : undefined}
+                    className={`nav-section-link rounded-[var(--radius-sm)] py-4 font-[var(--font-inter)] text-3xl leading-none transition-colors ${
                       isActive
-                        ? "font-semibold text-text-primary"
-                        : "font-normal text-text-secondary-large"
+                        ? "font-bold"
+                        : "font-normal"
                     }`}
                     href={item.href}
                     key={item.href}

@@ -21,8 +21,8 @@ export function HeroSection() {
             <TextLink href="/contact" variant="accent">
               Start a project
             </TextLink>
-            <TextLink href="/work" showIcon={false}>
-              See our work
+            <TextLink href="/#solutions" showIcon={false}>
+              See our services
             </TextLink>
           </div>
         </div>

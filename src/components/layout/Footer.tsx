@@ -5,9 +5,11 @@ import { siteConfig } from "@/lib/constants";
 
 const quickLinks = [
   { label: "Solutions", href: "/#solutions" },
+  { label: "Why Choose Us", href: "/#quality" },
   { label: "Work", href: "/#work" },
-  { label: "Approach", href: "/#process" },
-  { label: "Sitemap", href: "/sitemap.xml" }
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Our Process", href: "/#process" },
+  { label: "Team", href: "/#team" }
 ] as const;
 
 const socialLinks = [
@@ -20,11 +22,6 @@ const socialLinks = [
     label: "Instagram",
     href: siteConfig.social.instagram,
     icon: "/icons/Instagram-Fill Streamline Remix-Fill.svg"
-  },
-  {
-    label: "Facebook",
-    href: siteConfig.social.facebook,
-    icon: "/icons/Facebook-1 Streamline Plump.svg"
   }
 ] as const;
 
@@ -80,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 text-center text-sm text-text-secondary">
-          <p>&copy; {new Date().getFullYear()} DevTorque &bull; All rights reserved &bull; Made with care</p>
+          <p>&copy; {new Date().getFullYear()} DevTorque &bull; All rights reserved &bull; Made with care 🧡</p>
         </div>
       </Container>
     </footer>

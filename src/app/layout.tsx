@@ -28,7 +28,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Software built with care`,
+    default: `${siteConfig.name} | Digital solutions partner for businesses`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     icon: "/images/brand/Logo.svg"
   },
   openGraph: {
-    title: `${siteConfig.name} | Software built with care`,
+    title: `${siteConfig.name} | Digital solutions partner for businesses`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Software built with care`,
+    title: `${siteConfig.name} | Digital solutions partner for businesses`,
     description: siteConfig.description
   },
   robots: {

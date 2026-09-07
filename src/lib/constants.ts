@@ -6,8 +6,7 @@ export const siteConfig = {
   email: "hello@devtorque.com",
   social: {
     linkedin: "https://www.linkedin.com/company/devtorque",
-    instagram: "https://www.instagram.com/devtorque/",
-    facebook: "https://www.facebook.com/devtorque/"
+    instagram: "https://www.instagram.com/devtorque.ai/"
   }
 } as const;
 

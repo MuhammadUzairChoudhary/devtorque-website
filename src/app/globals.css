@@ -133,6 +133,16 @@ a {
   text-decoration: none;
 }
 
+.nav-section-link {
+  color: var(--text-secondary-large);
+}
+
+.nav-section-link:hover,
+.nav-section-link:focus-visible,
+.nav-section-link[aria-current="location"] {
+  color: var(--text-strong);
+}
+
 button,
 input,
 textarea,
