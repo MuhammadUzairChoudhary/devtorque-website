@@ -4,16 +4,16 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const teamMembers = [
   {
-    name: "M. Uzair Choudhary",
-    role: "Head of Product and Growth",
-    image: "/images/brand/M. Uzair Choudhary.png",
-    linkedin: "https://www.linkedin.com/in/muhammad-uzair-choudhary/"
-  },
-  {
     name: "Ali Rizwan",
     role: "Chief Executive Officer",
     image: "/images/brand/Ali Rizwan.png",
     linkedin: "https://www.linkedin.com/in/ali-rizwan-ar-07710a269/"
+  },
+  {
+    name: "M. Uzair Choudhary",
+    role: "Head of Product and Growth",
+    image: "/images/brand/M. Uzair Choudhary.png",
+    linkedin: "https://www.linkedin.com/in/muhammad-uzair-choudhary/"
   },
   {
     name: "Usman Asif",
@@ -38,10 +38,10 @@ export function TeamSection() {
           }
         />
 
-        <div className="reveal-stagger -mx-[var(--page-gutter)] mt-[var(--section-heading-gap)] flex snap-x gap-5 overflow-x-auto px-[var(--page-gutter)] pb-4 md:mx-auto md:grid md:max-w-[1180px] md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 lg:gap-8">
+        <div className="reveal-stagger -mx-[var(--page-gutter)] mt-[var(--section-heading-gap)] flex flex-col gap-5 overflow-hidden px-[var(--page-gutter)] pb-4 md:mx-auto md:grid md:max-w-[1180px] md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 lg:gap-8">
           {teamMembers.map((member) => (
             <article
-              className="group relative aspect-[4/5] w-[min(82vw,340px)] shrink-0 snap-center overflow-hidden rounded-[var(--radius-md)] bg-surface-muted md:w-auto"
+              className="group relative aspect-[4/5] w-full shrink-0 overflow-hidden rounded-[var(--radius-md)] bg-surface-muted md:w-auto"
               data-reveal
               key={member.name}
             >

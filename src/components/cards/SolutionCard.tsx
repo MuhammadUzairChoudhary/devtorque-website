@@ -13,7 +13,8 @@ export function SolutionCard({ solution }: { solution: Solution }) {
   const isLiftedImage = solution.slug === "ui-ux-design" || solution.slug === "app-development";
 
   return (
-    <Link
+    <CardShell
+      as={Link}
       aria-label={`${solution.title}: ${solution.description}`}
       data-reveal
       className={cn(
@@ -25,7 +26,10 @@ export function SolutionCard({ solution }: { solution: Solution }) {
       )}
       href={solution.href}
     >
-      <CardShell className={cn("min-h-[520px] p-6 sm:p-7 lg:p-10", solution.variant === "wide" && "lg:min-h-[520px]")}>
+      <div className={cn(
+        "min-h-[520px] p-6 sm:p-7 lg:p-10",
+        solution.variant === "wide" && "lg:min-h-[520px]"
+      )}>
         <div
           className={cn(
             "flex min-h-[260px] items-center justify-center rounded-[var(--radius-lg)]",
@@ -33,16 +37,14 @@ export function SolutionCard({ solution }: { solution: Solution }) {
             isVoiceAgent && "flex-col",
             isAutomation &&
               "-mx-6 -mt-6 px-6 pt-6 sm:-mx-7 sm:-mt-7 sm:px-7 sm:pt-7 lg:-mx-10 lg:-mt-10 lg:px-10 lg:pt-10 service-media-grid"
-          )}
-        >
+          )}>
           <div
             className={cn(
               "relative flex w-full items-center justify-center",
               isAutomation && "max-w-[620px]",
               isVoiceAgent && "max-w-[170px]",
               !isAutomation && !isVoiceAgent && "max-w-full"
-            )}
-          >
+            )}>
             <Image
               alt={solution.imageAlt}
               className={cn(
@@ -95,12 +97,12 @@ export function SolutionCard({ solution }: { solution: Solution }) {
           <p className="mt-3 max-w-[24rem] text-card-description text-text-secondary">
             {solution.description}
           </p>
-          <span className="mt-auto inline-flex items-center gap-2 pt-8 font-[var(--font-inter)] text-[0.9375rem] font-semibold leading-none text-text-primary transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:text-accent">
-            Explore {solution.title === "AI Voice Agent" ? "voice agents" : solution.title}
+          <Link href="/contact" className="mt-auto inline-flex items-center gap-2 pt-8 font-[var(--font-inter)] text-[0.9375rem] font-semibold leading-none text-text-primary transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:text-accent">
+            Talk to a {solution.title === "AI Voice Agent" ? "Voice Agent" : solution.title} Expert
             <ArrowUpRight aria-hidden="true" className="transition-transform duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" size={15} strokeWidth={2.25} />
-          </span>
+          </Link>
         </div>
-      </CardShell>
-    </Link>
+      </div>
+    </CardShell>
   );
 }

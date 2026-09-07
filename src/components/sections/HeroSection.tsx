@@ -17,7 +17,7 @@ export function HeroSection() {
             We help businesses solve real problems with technology
             <br className="hidden sm:block" /> and make everyday work simpler.
           </p>
-          <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:gap-12" data-reveal>
+          <div className="mt-14 flex flex-row items-center justify-center gap-3 sm:gap-12 lg:gap-12" data-reveal>
             <TextLink href="/contact" variant="accent">
               Start a project
             </TextLink>
