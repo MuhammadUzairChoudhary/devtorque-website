@@ -33,10 +33,10 @@ export function Footer() {
           <div>
             <Image
               alt="DevTorque"
-              className="h-10 w-auto"
-              height={161}
+              className="h-8 w-auto"
+              height={40}
               src="/images/brand/devtorque-logo-name.svg"
-              width={992}
+              width={191}
             />
             <p className="mt-5 max-w-[390px] text-card-description text-text-secondary">
               Software engineering and digital solutions partner for businesses.

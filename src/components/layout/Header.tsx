@@ -13,11 +13,11 @@ export function Header() {
         <Link aria-label="DevTorque home" className="flex items-center justify-self-start transition-opacity duration-[var(--duration-fast)] ease-[var(--ease-standard)] hover:opacity-75" href="/">
           <Image
             alt="DevTorque"
-            className="h-10 w-auto"
-            height={161}
+            className="h-8 w-auto"
+            height={40}
             priority
             src="/images/brand/devtorque-logo-name.svg"
-            width={992}
+            width={191}
           />
         </Link>
 
