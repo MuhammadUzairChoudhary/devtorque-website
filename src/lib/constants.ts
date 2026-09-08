@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "DevTorque",
-  url: "https://devtorque.com",
+  url: "https://dev-torque.com",
   description:
     "DevTorque builds thoughtful software products, AI automation, voice agents, websites, and digital experiences with care in every detail.",
   email: "hello@devtorque.com",
