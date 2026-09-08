@@ -14,10 +14,10 @@ export function Header() {
           <Image
             alt="DevTorque"
             className="h-10 w-auto"
-            height={40}
+            height={161}
             priority
-            src="/images/brand/devtorque-logo-name.png"
-            width={191}
+            src="/images/brand/devtorque-logo-name.svg"
+            width={992}
           />
         </Link>
 

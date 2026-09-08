@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
         </div>
       </Container>
-      <div className="-mt-16 sm:-mt-14 lg:-mt-10" data-reveal>
+      <div className="mt-4 sm:-mt-14 lg:-mt-10" data-reveal>
         <HeroVisual />
       </div>
     </section>

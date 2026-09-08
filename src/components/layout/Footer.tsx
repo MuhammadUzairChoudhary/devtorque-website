@@ -34,9 +34,9 @@ export function Footer() {
             <Image
               alt="DevTorque"
               className="h-10 w-auto"
-              height={40}
-              src="/images/brand/devtorque-logo-name.png"
-              width={191}
+              height={161}
+              src="/images/brand/devtorque-logo-name.svg"
+              width={992}
             />
             <p className="mt-5 max-w-[390px] text-card-description text-text-secondary">
               Software engineering and digital solutions partner for businesses.
