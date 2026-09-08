@@ -23,6 +23,12 @@ const teamMembers = [
   }
 ] as const;
 
+const desktopOrder = [
+  teamMembers.find((m) => m.name === "M. Uzair Choudhary"),
+  teamMembers.find((m) => m.name === "Ali Rizwan"),
+  teamMembers.find((m) => m.name === "Usman Asif")
+] as const;
+
 export function TeamSection() {
   return (
     <section className="overflow-hidden bg-background pb-[var(--section-y)]" id="team">
@@ -80,6 +86,50 @@ export function TeamSection() {
               </div>
             </article>
           ))}
+
+          <div className="hidden md:grid md:grid-cols-3 md:gap-6">
+            {desktopOrder.filter(Boolean).map((member) => (
+              <article
+                className="group relative aspect-[4/5] w-auto overflow-hidden rounded-[var(--radius-md)] bg-surface-muted"
+                data-reveal
+                key={member.name}
+              >
+                <Image
+                  alt={member.name}
+                  className="object-cover object-[center_28%] transition-transform duration-[var(--duration-slow)] ease-[var(--ease-out)] group-hover:scale-[1.02]"
+                  fill
+                  sizes="(min-width: 768px) 31vw"
+                  src={member.image}
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-[linear-gradient(180deg,transparent_48%,rgb(22_22_22_/_0.18)_67%,rgb(22_22_22_/_0.9)_100%)]"
+                />
+
+                <div className="absolute inset-x-0 bottom-0 z-10 flex min-h-[36%] flex-col justify-end p-5 text-white sm:p-6">
+                  <h3 className="text-card-title text-white">{member.name}</h3>
+                  <p className="mt-1 text-card-description text-white/80">{member.role}</p>
+                  <a
+                    aria-label={`Visit ${member.name} on LinkedIn`}
+                    className="mt-5 inline-flex w-fit items-center gap-2.5 text-card-description font-medium text-white transition-colors hover:text-white/75"
+                    href={member.linkedin}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      alt=""
+                      aria-hidden="true"
+                      className="size-[18px] brightness-0 invert"
+                      height={18}
+                      src="/icons/Linkedin-Logo Streamline Logos-Block.svg"
+                      width={18}
+                    />
+                    LinkedIn
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </Container>
     </section>
