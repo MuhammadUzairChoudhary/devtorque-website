@@ -1,6 +1,5 @@
 import { ProjectCard } from "@/components/cards/ProjectCard";
 import { Container } from "@/components/layout/Container";
-import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { projects } from "@/data/projects";
 

@@ -15,7 +15,6 @@ export function useActiveSection(): string | null {
   useEffect(() => {
     // Only track sections on the home page
     if (pathname !== "/") {
-      setActiveId(null);
       return;
     }
 
@@ -26,8 +25,6 @@ export function useActiveSection(): string | null {
     if (sections.length === 0 || !("IntersectionObserver" in window)) {
       return;
     }
-
-    setActiveId(null);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -62,5 +59,5 @@ export function useActiveSection(): string | null {
     };
   }, [pathname]);
 
-  return activeId;
+  return pathname === "/" ? activeId : null;
 }

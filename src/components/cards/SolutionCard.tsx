@@ -14,18 +14,22 @@ export function SolutionCard({ solution }: { solution: Solution }) {
 
   return (
     <CardShell
-      as={Link}
-      aria-label={`${solution.title}: ${solution.description}`}
       data-reveal
       className={cn(
-        "block h-full focus-visible:rounded-[var(--radius-card)]",
+        "h-full",
         solution.span === 8
           ? "col-span-12 md:col-span-12 lg:col-span-8"
           : "col-span-12 md:col-span-6 lg:col-span-4",
         solution.slug === "app-development" && "md:col-span-12 lg:col-span-4"
       )}
-      href={solution.href}
     >
+      <Link
+        aria-label={`${solution.title}: ${solution.description}`}
+        className="absolute inset-0 z-10 rounded-[var(--radius-card)]"
+        href={solution.href}
+      >
+        <span className="sr-only">View {solution.title}</span>
+      </Link>
       <div className={cn(
         "min-h-[520px] p-6 sm:p-7 lg:p-10",
         solution.variant === "wide" && "lg:min-h-[520px]"
@@ -97,7 +101,7 @@ export function SolutionCard({ solution }: { solution: Solution }) {
           <p className="mt-3 max-w-[24rem] text-card-description text-text-secondary">
             {solution.description}
           </p>
-          <Link href="/contact" className="mt-auto inline-flex items-center gap-2 pt-8 font-[var(--font-inter)] text-[0.9375rem] font-semibold leading-none text-text-primary transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:text-accent">
+          <Link href="/contact" className="relative z-20 mt-auto inline-flex w-fit items-center gap-2 pt-8 font-[var(--font-inter)] text-[0.9375rem] font-semibold leading-none text-text-primary transition-colors duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:text-accent">
             Talk to a {solution.title === "AI Voice Agent" ? "Voice Agent" : solution.title} Expert
             <ArrowUpRight aria-hidden="true" className="transition-transform duration-[var(--duration-fast)] ease-[var(--ease-standard)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" size={15} strokeWidth={2.25} />
           </Link>
