@@ -10,7 +10,7 @@ export function HeroSection() {
           <h1 className="text-hero text-balance text-text-primary" data-reveal>
             <span className="block">Software built with</span>
             <span className="text-hero-accent -mt-2 block pb-2 sm:-mt-3">
-              care in every detail.
+              meticulous care.
             </span>
           </h1>
           <p className="mt-4 max-w-[var(--measure-reading)] text-balance font-[var(--font-geist)] text-[clamp(1.05rem,1.25vw,1.375rem)] leading-[1.18] text-text-secondary-large" data-reveal>
