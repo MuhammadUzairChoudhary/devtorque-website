@@ -22,8 +22,7 @@ export function SolutionCard({ solution }: { solution: Solution }) {
           ? "col-span-12 md:col-span-12 lg:col-span-8"
           : isVoiceAgent
             ? "col-span-12 lg:col-span-4"
-          : "col-span-12 md:col-span-6 lg:col-span-4",
-        solution.slug === "app-development" && "md:col-span-12 lg:col-span-4"
+            : "col-span-12 md:col-span-6 lg:col-span-4"
       )}
     >
       <Link
